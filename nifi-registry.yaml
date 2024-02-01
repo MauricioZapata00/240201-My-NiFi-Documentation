@@ -1,0 +1,9 @@
+---
+# docker-compose -f docker-compose.yaml up -d
+version: '3.8'
+services:
+  nifi-registry:
+    image: apache/nifi-registry:1.25.0
+    container_name: 'NiFi-registry-1.25.0'
+    ports:
+      - "18080:18080"
